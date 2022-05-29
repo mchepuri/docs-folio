@@ -10,7 +10,7 @@ export const educationData = [
         id: 2,
         institution: 'Kamineni Institute of Medical Sciences',
         course: 'D.G.O  (Diploma in Gynecology and Obstetrics)',
-        startYear: '2019',
-        endYear: '2021'
+        startYear: '2018',
+        endYear: '2020'
     },
 ]
