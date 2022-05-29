@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const path = require('path');
-const port = process.env.PORT | 5000;
+const _port = process.env.PORT || 5000;
 
 if(process.env.NODE_ENV==='production')
 {
@@ -21,7 +21,7 @@ if(process.env.NODE_ENV==='production')
     });
 }
 
-app.listen(port,(err)=>{
+app.listen(_port,(err)=>{
     if(err) return console.log(err);
-    console.log(' Server running on port ',port);
+    console.log(' Server running on port ',_port);
 });

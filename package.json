@@ -1,5 +1,5 @@
 {
-  "name": "react-boilerplate",
+  "name": "docs-folio",
   "version": "1.0.0",
   "description": "light weight react boiler plate",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "npm test",
     "build": "webpack",
     "deploy": "npm run build",
-    "start": "NODE_ENV=production node scripts/server.js"
+    "start": "PORT=3000 NODE_ENV=production node scripts/server.js"
   },
   "author": "mchepuri",
   "license": "ISC",
