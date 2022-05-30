@@ -6,8 +6,10 @@
   "scripts": {
     "test": "npm test",
     "build": "webpack",
+    "build:analyze": "webpack --profile ",
     "deploy": "npm run build",
-    "start": "NODE_ENV=production node scripts/server.js"
+    "start": "NODE_ENV=production node scripts/server.js",
+    "dev":"webpack serve --open --hot --host 0.0.0.0 --mode development"
   },
   "author": "mchepuri",
   "license": "ISC",
@@ -44,5 +46,8 @@
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^4.5.0"
   }
 }

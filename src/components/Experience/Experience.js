@@ -7,7 +7,7 @@ import './Experience.css';
 import { experienceData } from '../../data/experienceData'
 import ExperienceCard from './ExperienceCard';
 
-function Experience() {
+const Experience = () => {
 
     const { theme } = useContext(ThemeContext);
     return (

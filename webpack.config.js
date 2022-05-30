@@ -10,10 +10,13 @@ const HTMLWebpackPluginConfig =   new HTMLWebpackPlugin(
         inject: 'body'
     }
 );
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
+
 /* exports */
 module.exports = {
     entry :  './src/index.js',
-    mode: 'development',
+    mode: process.env.NODE_ENV,
     output:{
       filename: 'index.bundle.js',
       chunkFilename: '[name].bundle.js',
@@ -33,7 +36,7 @@ module.exports = {
         },
         {
             test: /\.svg$/,
-            use: ['@svgr/webpack', 'file-loader'],
+            use: ['@svgr/webpack', 'file-loader']
         },
         {
             test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
@@ -56,6 +59,7 @@ module.exports = {
       },
     plugins:[
         new webpack.HotModuleReplacementPlugin() ,HTMLWebpackPluginConfig,
+        new BundleAnalyzerPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].css' ,
             chunkFilename: '[id].css',

@@ -6,7 +6,7 @@ import { aboutData } from '../../data/aboutData'
 
 
 
-function About() {
+export  const About = () => {
 
     const { theme } = useContext(ThemeContext);
     return (
@@ -32,5 +32,4 @@ function About() {
 
     )
 }
-
-export default About
+export default  About;

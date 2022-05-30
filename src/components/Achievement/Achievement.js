@@ -5,7 +5,7 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import { achievementData } from '../../data/achievementData'
 import AchievementCard from './AchievementCard';
 
-function Achievement() {
+const  Achievement = () =>{
 
     const { theme } = useContext(ThemeContext);
     return (

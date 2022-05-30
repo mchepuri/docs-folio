@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext,useEffect } from 'react';
 import { Button } from '@material-ui/core';
 //import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
@@ -8,9 +8,13 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 
 
-function Landing() {
+function Landing(props) {
     const { theme, drawerOpen } = useContext(ThemeContext);
-
+    const {afterLandingComplete} = props;
+    useEffect(()=>{
+        console.log('In Use effec of landing ...calling ladingPageLoaded');
+        afterLandingComplete();
+    });
     const useStyles = makeStyles((t) => ({
         resumeBtn: {
             color: theme.primary,

@@ -7,7 +7,7 @@ import EducationCard from './EducationCard';
 
 import { educationData } from '../../data/educationData'
 
-function Education() {
+const  Education = () => {
 
     const { theme } = useContext(ThemeContext);
     return (
