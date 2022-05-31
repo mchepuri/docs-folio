@@ -12,13 +12,21 @@ const HTMLWebpackPluginConfig =   new HTMLWebpackPlugin(
 );
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
+const optimization = {
+  splitChunks: {
+      cacheGroups: {
+          commons: { test: /[\\/]node_modules[\\/]/, name: "common", chunks: "all" }
+      }
+  }
+};
 
 /* exports */
 module.exports = {
     entry :  './src/index.js',
+    optimization,
     mode: process.env.NODE_ENV,
     output:{
-      filename: 'index.bundle.js',
+      filename: '[name].bundle.js',
       chunkFilename: '[name].bundle.js',
       path: path.resolve(__dirname , './dist')
       },
@@ -36,10 +44,12 @@ module.exports = {
         },
         {
             test: /\.svg$/,
+            exclude : /node_modules/,
             use: ['@svgr/webpack', 'file-loader']
         },
         {
             test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+            exclude : /node_modules/,
             use: [
               {
                 loader: 'file-loader',
