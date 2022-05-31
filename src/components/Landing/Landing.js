@@ -1,7 +1,7 @@
 import React, { useContext,useEffect } from 'react';
 import { Button } from '@material-ui/core';
 //import { NavHashLink as NavLink } from 'react-router-hash-link';
-import { makeStyles } from '@material-ui/core/styles';
+//import { makeStyles } from '@material-ui/core/styles';
 
 import './Landing.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
@@ -15,7 +15,7 @@ function Landing(props) {
         console.log('In Use effec of landing ...calling ladingPageLoaded');
         afterLandingComplete();
     });
-    const useStyles = makeStyles((t) => ({
+   /* const useStyles = makeStyles((t) => ({
         resumeBtn: {
             color: theme.primary,
             borderRadius: '30px',
@@ -61,7 +61,7 @@ function Landing(props) {
         },
     }));
 
-    const classes = useStyles();
+    const classes = useStyles();*/
 
     return (
         <div className='landing'>
