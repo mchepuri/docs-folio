@@ -2,11 +2,11 @@ import React,{Suspense,useState} from 'react'
 import { Helmet } from 'react-helmet'
 
 import { Navbar, Landing } from '../../components';
-const About = React.lazy(() => import('../../components/About/About'));
-const Skills = React.lazy(() => import('../../components/Skills/Skills'));
-const Education = React.lazy(() => import('../../components/Education/Education'));
-const Contacts = React.lazy(() => import('../../components/Contacts/Contacts'));
-const Achievement = React.lazy(() => import('../../components/Achievement/Achievement'));
+const About = React.lazy(() => import(/* webpackChunkName: "about"*/'../../components/About/About'));
+const Skills = React.lazy(() => import(/* webpackChunkName: "skills"*/'../../components/Skills/Skills'));
+const Education = React.lazy(() => import(/* webpackChunkName: "education"*/'../../components/Education/Education'));
+const Contacts = React.lazy(() => import(/* webpackChunkName: "contacts"*/'../../components/Contacts/Contacts'));
+const Achievement = React.lazy(() => import(/* webpackChunkName: "achievement"*/'../../components/Achievement/Achievement'));
 import { headerData } from '../../data/headerData'
 
 function Main() {
