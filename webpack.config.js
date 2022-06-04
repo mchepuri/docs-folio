@@ -10,7 +10,6 @@ const HTMLWebpackPluginConfig =   new HTMLWebpackPlugin(
         inject: 'body'
     }
 );
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const optimization = {
   splitChunks: {
@@ -69,7 +68,6 @@ module.exports = {
       },
     plugins:[
         new webpack.HotModuleReplacementPlugin() ,HTMLWebpackPluginConfig,
-        new BundleAnalyzerPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].css' ,
             chunkFilename: '[id].css',
