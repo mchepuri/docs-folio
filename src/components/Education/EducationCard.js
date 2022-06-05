@@ -6,8 +6,8 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 
 import './Education.css'
 
-const eduImgWhite = 'https://babycatcher-static.s3.ap-south-1.amazonaws.com/imgs/assets/svg/education/eduImgWhite.svg'
-const  eduImgBlack = 'https://babycatcher-static.s3.ap-south-1.amazonaws.com/imgs/assets/svg/education/eduImgBlack.svg'
+const eduImgWhite = 'https://d32ta82nemg913.cloudfront.net/imgs/assets/svg/education/eduImgWhite.svg'
+const  eduImgBlack = 'https://d32ta82nemg913.cloudfront.net/imgs/assets/svg/education/eduImgBlack.svg'
 
 const EducationCard = ({ id, institution, course, startYear, endYear }) => {
 

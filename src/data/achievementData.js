@@ -7,7 +7,7 @@ export const achievementData = {
             details : 'Presentation on Emergence of Ovarian Masses after Hysterectomy at State Conference by Obstetrics and Gynaecological Society Of Guntur',
             date : 'Jul 14, 2019',
             field : 'Gynaocology',
-            image : 'https://babycatcher-static.s3.ap-south-1.amazonaws.com/imgs/apcob-1.jpeg'
+            image : 'https://d32ta82nemg913.cloudfront.net/imgs/apcob-1.jpeg'
         },
         {
             id : 2,
@@ -15,7 +15,7 @@ export const achievementData = {
             details : 'Presentation on Ectopic Molar Pregnency - A Rare Entity at Annaul Congress of Telangana State Obstetrics and Gynaecological Society',
             date : 'Aug 4, 2019',
             field : 'Gynaocology',
-            image : 'https://babycatcher-static.s3.ap-south-1.amazonaws.com/imgs/apcob-2.jpeg'
+            image : 'https://d32ta82nemg913.cloudfront.net/imgs/apcob-2.jpeg'
         },
         {
             id : 3,
@@ -23,7 +23,7 @@ export const achievementData = {
             details : 'Workshop on Critical Care - A challenge to the obstetrician',
             date : 'Jul 12, 2019',
             field : 'CriticalCare in Obstetrics',
-            image : 'https://babycatcher-static.s3.ap-south-1.amazonaws.com/imgs/kims-1.jpeg'
+            image : 'https://d32ta82nemg913.cloudfront.net/imgs/kims-1.jpeg'
         },
     ]
 }
