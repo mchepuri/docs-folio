@@ -126,6 +126,7 @@ function Landing(props) {
                        */}
                     </div>
                 </div>
+                <img src={headerData.additonalImg1} className='additional-img1'/>
                 <img
                     src={headerData.image}
                     alt=''

@@ -9,7 +9,7 @@
     "build:analyze": "webpack --profile ",
     "deploy": "npm run build",
     "start": "NODE_ENV=production node scripts/server.js",
-    "dev":"webpack serve --open --hot --host 0.0.0.0 --mode development"
+    "dev":"webpack serve --open --hot --host localhost --mode development"
   },
   "author": "mchepuri",
   "license": "ISC",
