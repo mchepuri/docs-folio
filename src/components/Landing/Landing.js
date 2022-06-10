@@ -1,7 +1,7 @@
 import React, { useContext,useEffect } from 'react';
 import { Button } from '@material-ui/core';
 //import { NavHashLink as NavLink } from 'react-router-hash-link';
-//import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 import './Landing.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
@@ -15,7 +15,7 @@ function Landing(props) {
         console.log('In Use effec of landing ...calling ladingPageLoaded');
         afterLandingComplete();
     });
-   /* const useStyles = makeStyles((t) => ({
+    const useStyles = makeStyles((t) => ({
         resumeBtn: {
             color: theme.primary,
             borderRadius: '30px',
@@ -37,7 +37,7 @@ function Landing(props) {
                 width: '180px',
             },
         },
-        contactBtn: {
+        /*contactBtn: {
             backgroundColor: theme.primary,
             color: theme.secondary,
             borderRadius: '30px',
@@ -58,10 +58,10 @@ function Landing(props) {
             [t.breakpoints.down('sm')]: {
                 display: 'none',
             },
-        },
+        },*/
     }));
 
-    const classes = useStyles();*/
+    const classes = useStyles();
 
     return (
         <div className='landing'>
@@ -141,13 +141,13 @@ function Landing(props) {
                 >
                     <div
                         className='lcr--content'
-                        style={{ color: theme.tertiary }}
-                    >
+                        style={{ color: theme.tertiary }}>
+                    
                         <h6>{headerData.title}</h6>
                         <h1>{headerData.name}</h1>
                         <p>{headerData.desciption}</p>
 
-                       {/* <div className='lcr-buttonContainer'>
+                        <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
                                 <a
                                     href={headerData.resumePdf}
@@ -160,7 +160,7 @@ function Landing(props) {
                                     </Button>
                                 </a>
                             )}
-                            <NavLink
+                            {/*<NavLink
                                 to='/#contacts'
                                 smooth={true}
                                 spy='true'
@@ -169,8 +169,8 @@ function Landing(props) {
                                 <Button className={classes.contactBtn}>
                                     Contact
                                 </Button>
-                            </NavLink>
-                            </div>*/}
+                            </NavLink>*/}
+                            </div>
                     </div>
                 </div>
             </div>
