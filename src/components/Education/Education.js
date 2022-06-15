@@ -23,6 +23,7 @@ const  Education = () => {
                             institution={edu.institution}
                             course={edu.course}
                             startYear={edu.startYear}
+                            coursefullname={edu.fullcoursename}
                             endYear={edu.endYear}
                         />
                     ))}

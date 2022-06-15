@@ -9,7 +9,7 @@ import './Education.css'
 const eduImgWhite = 'https://d32ta82nemg913.cloudfront.net/imgs/assets/svg/education/eduImgWhite.svg'
 const  eduImgBlack = 'https://d32ta82nemg913.cloudfront.net/imgs/assets/svg/education/eduImgBlack.svg'
 
-const EducationCard = ({ id, institution, course, startYear, endYear }) => {
+const EducationCard = ({ id, institution, course,coursefullname, startYear, endYear }) => {
 
     const { theme } = useContext(ThemeContext);
 
@@ -33,6 +33,7 @@ const EducationCard = ({ id, institution, course, startYear, endYear }) => {
                 <div className="education-details">
                     <h6 style={{color: theme.primary}}>{startYear}-{endYear}</h6>
                     <h4 style={{color: theme.tertiary}}>{course}</h4>
+                    <div style={{color: theme.tertiary80}}>{coursefullname}</div>
                     <h5 style={{color: theme.tertiary80}}>{institution}</h5>
                 </div>
             </div>
